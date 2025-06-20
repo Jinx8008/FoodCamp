@@ -7,3 +7,177 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.main-container{
+  background-color: rgb(247, 104, 6);
+  height: 90vh;
+  display: flex;
+  font-family: "Playfair Display", serif;
+  padding: 5vw;
+  align-items: center;
+  gap: 7vw;
+}
+
+.contact-info h1{
+  font-size: 3vw;
+}
+
+.main-container p{
+  font-size: 1.5vw;
+}
+
+.contact-info{
+  width: 30vw;
+}
+
+.contact-info p{
+ font-size: 1.2vw;
+ font-weight: 200;
+ margin-top: 1vw;
+}
+
+.contact-details{
+  margin-top: 2vw;
+}
+.contact-details p{
+  margin-top: 0.5vw;
+  font-weight: 700;
+}
+
+
+.contact-form{
+  background-color: rgba(255, 255, 255, 0.639);
+  border-radius: 2vw;
+  padding: 2vw;
+  width: 70vw;
+}
+.contact-form header{
+  /* border: 1px solid black; */
+  width: 40vw;
+}
+.contact-form .row1, .row2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form input{
+  border: 1px solid rgba(0, 0, 0, 0.429);
+  width: 100%;
+  border-radius: 0.4vw;
+}
+
+
+.contact-form form{
+  margin-top: 2vw;
+}
+
+.form-header{
+  font-size: 1.5vw;
+  /* border: 1px solid black; */
+  width: 20vw;
+}
+.row1 input{
+padding: 0.5vw;
+width: 26vw;
+}
+.row2 input{
+padding: 0.5vw;
+width: 26vw;
+}
+.row3 input{
+padding: 0.5vw;
+}
+.row4 input{
+padding: 0.5vw;
+padding-bottom: 3vw;
+}
+
+.row1, .row2, .row3, .row4 {
+  margin-top: 1vw;
+}
+
+.contact-form button{
+  background-color: rgb(247, 104, 6);
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  margin-top: 1vw;
+  color: white;
+}
+.container-details-content{
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+.container-details-content img{
+  height: 2vw;
+}
+
+
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    height: auto;
+    padding: 8vw 5vw;
+    gap: 5vw;
+  }
+
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-info h1 {
+    font-size: 6vw;
+  }
+
+  .contact-info p {
+    font-size: 3.5vw;
+  }
+
+  .contact-details p {
+    font-size: 3.5vw;
+  }
+
+  .container-details-content img {
+    height: 4vw;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 5vw 4vw;
+    border-radius: 4vw;
+  }
+
+  .contact-form header,
+  .form-header {
+    width: 100%;
+    text-align: center;
+    font-size: 4.5vw;
+  }
+
+  .contact-form .row1,
+  .contact-form .row2,
+  .contact-form .row3,
+  .contact-form .row4 {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .row1 input,
+  .row2 input,
+  .row3 input,
+  .row4 input {
+    width: 100%;
+    font-size: 4vw;
+    padding: 3vw;
+    border-radius: 1vw;
+  }
+
+  .contact-form button {
+    padding: 3vw;
+    font-size: 4vw;
+    border-radius: 1.5vw;
+    width: 100%;
+  }
+}
