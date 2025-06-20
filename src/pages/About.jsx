@@ -3,7 +3,10 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum magni non, unde harum, nulla, ipsum animi modi maiores tempora nisi error odit quia officia laboriosam cupiditate asperiores possimus ad ratione!
+      <h1>About Us</h1>
+      <p>Welcome to our food camp! We are dedicated to providing the best culinary experiences.</p>
+      <p>Our team consists of passionate chefs and food enthusiasts who love to share their knowledge and skills.</p>
+      <p>Join us for exciting cooking classes, workshops, and events that will elevate your culinary journey!</p>
     </div>
   )
 }
