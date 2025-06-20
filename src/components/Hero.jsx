@@ -5,7 +5,7 @@ import { StarIcon } from 'lucide-react'
 const Hero = () => {
   return (
    <>
-   <div className="flex items-center flex-col-reverse lg:flex-row mt-8 justify-center gap-20 px-12" style={{
+   <div className="flex h-[100%] items-center flex-col-reverse lg:flex-row mt-8 justify-center gap-20 px-12" style={{
     // background:"../assets/food.png"
    }}>
     <div>
