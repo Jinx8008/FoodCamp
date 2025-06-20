@@ -45,7 +45,7 @@ const HowItWorks = () => {
             <div className="bg-orange-300 justify-center p-8 rounded-2xl w-full  lg:w-[300px] hover:shadow-xl cursor-pointer hover:translate-y-[-20px] transition-shadow ease-in-out transition-transform transition-[2s]">
               {/* <HamburgerIcon /> */}
               {item.icon}
-              <h1 className="!font-bold text-3xl playfair my-4">
+              <h1 className="!font-bold text-[2rem] playfair my-4">
                 {item.title}
               </h1>
               <span>{item.description}</span>
