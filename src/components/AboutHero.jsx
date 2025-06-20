@@ -9,7 +9,7 @@ const AboutHero = () => {
     <section className='container text-center mx-auto bg-white shadow-lg rounded-lg mt-8 mb-8'>
       
         <Navbar/>
-        <div className="text-startgit  py-6 px-4" >
+        <div className="text-start  py-6 px-4" >
         <h1 className="text-3xl md:text-5xl font-bold">
           WELCOME TO <span className="italic font-light">FoodCamp...</span>
         </h1>

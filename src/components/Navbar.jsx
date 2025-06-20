@@ -9,7 +9,7 @@ const Navbar = () => {
             <p className='sm:text-red-500 lg:text-blue-400 '>Logo</p>
         </div>
         <div className='list-none gap-3 text-lg font-bold hidden lg:flex'>
-            <li>About</li>
+            <li><a href="About">About</a></li>
             <li>Contact</li>
             <li>Services</li>
         </div>
