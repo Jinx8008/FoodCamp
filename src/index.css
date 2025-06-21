@@ -6,8 +6,55 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+
 }
 
 .passion span{
 color: orangered;
+}
+.coreValue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background-color: rgb(13, 85, 13);
+
+}
+.value{
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px 10px;
+  align-items: center;
+
+}
+.valueItem{
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid wheat;
+  text-align: center;
+  align-items: center;
+}
+@media screen and (max-width:768px) {
+  .value{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+@media screen and (max-width:375px) {
+   .value{
+  display: grid;
+  grid-template-columns: repeat(1 , 1fr);
+
+}
+.valueItem{
+  border-right: none;
+  border-bottom: 1px solid wheat;
+  
+}
 }
