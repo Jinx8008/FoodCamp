@@ -2,6 +2,7 @@ import React from 'react'
 import { FishIcon, LeafIcon, UtensilsIcon, StarIcon, ForkKnifeCrossedIcon  } from 'lucide-react';
 import Image from "../assets/about.jpg"
 import Navbar from './Navbar';
+import CoreValue from './CoreValue';
 
 const AboutHero = () => {
 
@@ -25,11 +26,15 @@ const AboutHero = () => {
               <p className='flex gap-2 font-bold'>  <UtensilsIcon  />Crave It!</p>
                 <p className='flex gap-2 font-bold'><LeafIcon /> Get It!</p>
                 <p className='flex gap-2 font-bold'><FishIcon /> Eat Happy!</p>
+
                <p className='flex gap-2 font-bold'> <StarIcon />Food that wows</p>
                 <p className='flex gap-2 font-bold'><ForkKnifeCrossedIcon />Simply Delicious</p>
+
                 
               </div>
             </div>
+
+      <CoreValue/>
     </section>
   )
 }
