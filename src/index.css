@@ -58,3 +58,16 @@ color: orangered;
   
 }
 }
+
+.Animation{
+  animation: Slide 10s ease-in-out forwards infinite;
+  overflow: hidden;
+}
+@keyframes Slide{
+  0%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(50%);
+  }
+}
