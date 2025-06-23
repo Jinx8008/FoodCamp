@@ -8,6 +8,10 @@
   font-style: normal;
 
 }
+
+.passion span{
+color: orangered;
+}
 .coreValue{
   display: flex;
   justify-content: center;
