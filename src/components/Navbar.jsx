@@ -12,6 +12,7 @@ const Navbar = () => {
             <li>About</li>
             <li>Contact</li>
             <li>Services</li>
+            <li>Testimonial</li>
         </div>
         <div>
                 <div className='hidden lg:block'>
