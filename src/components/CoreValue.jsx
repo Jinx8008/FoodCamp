@@ -10,7 +10,7 @@ const CoreValue = () => {
     ]
 
   return (
-    <div className='coreValue'>
+    <div className='container coreValue'>
         <h2 className='font-bold playfair text-3xl' style={{color:"wheat"}}>OUR CORE VALUES</h2>
         <div className="value" >
             {values.map((value)=>{

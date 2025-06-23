@@ -2,7 +2,8 @@ import image from '../assets/platting.jpg';
 
 const Passion = () => {
   return (
-    <div className='flex gap-12 items-center flex-col lg:flex-row  justify-center p-8 bg-gray-100'>
+    <div className='container flex justify-center mx-auto '>
+    <div className='container flex gap-12 items-center flex-col lg:flex-row  justify-center p-8 bg-gray-100'>
       <div>
         <img src={image} alt="Passion" className="w-[500px] h-[650px] object-cover" />
       </div>
@@ -18,6 +19,7 @@ const Passion = () => {
         </p>
       </div>
 
+    </div>
     </div>
   )
 }
