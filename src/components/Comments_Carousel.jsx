@@ -37,11 +37,10 @@ const CommentsCarousel = () => {
 
     const TestimonialData = [
         {
-            name: "- Jay Chou (周杰伦) ",
-            review: "'Every bite packed more punch than one of my stunts!' 'The spring rolls had me flipping out. This catering team’s got more moves than I do.'",
-            likeBtn: `${liked2 ?(<HeartIcon />) : (<HeartIcon className='text-red-500' />) }`,
-            likeCount: `${countLiked1 <= 1 ? countLiked1 + '  like' : countLiked1 + "  likes"}`,
-            image: profileOne
+            name: "",
+            review: "",
+            likeBtn: "",
+            image: ""
         },
         {
             name: "",
@@ -76,14 +75,14 @@ const CommentsCarousel = () => {
                 {/* slide start */}
                 <div className="swiper-slide tranding-slide">
                     <div className="w-80 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <img className="rounded-t-lg" src={} alt="" />
+                        <img className="rounded-t-lg" src={profileOne} alt="" />
                         <div class="p-5">
-                            <p className="mb-2"></p>
+                            <p className="mb-2">“Every bite packed more punch than one of my stunts!”"The spring rolls had me flipping out. This catering team’s got more moves than I do."</p>
                             
-                            <h5 className="text-2xl mb-4"></h5>
+                            <h5 className="text-2xl mb-4">- Jay Chou (周杰伦) </h5>
                             <div className='flex gap-5'>
                                 <button onClick={() => {setLiked1(!liked1), setCountLiked1(countLiked1 + 1)}}>{liked1 ?(<HeartIcon />) : (<HeartIcon className='text-red-500' />) }</button>
-                                <p></p>
+                                <p>{countLiked1 <= 1 ? countLiked1 + '  like' : countLiked1 + "  likes"}</p>
                             </div>
                         </div>
                     </div>
@@ -96,7 +95,7 @@ const CommentsCarousel = () => {
                             
                             <h5 className="text-2xl mb-4">- Gong Li (巩俐) </h5>
                             <div className='flex gap-5'>
-                                <button onClick={() => {setLiked2(!liked2), setCountLiked2(countLiked2 + 1)}}></button>
+                                <button onClick={() => {setLiked2(!liked2), setCountLiked2(countLiked2 + 1)}}>{liked2 ?(<HeartIcon />) : (<HeartIcon className='text-red-500' />) }</button>
                                 <p>{countLiked2 <= 1 ? countLiked2 + '  like' : countLiked2 + "  likes"}</p>
                             </div>
                         </div>

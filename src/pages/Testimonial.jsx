@@ -6,12 +6,35 @@ import CommentsCarousel from '../components/Comments_Carousel'
 
 const Testimonial = () => {
   
+    // let displayImage = document.getElementById(myImage);
+    // displayImage.onchange = function() {
+    //     displayPicture(this)
+    // }
+    // function displayPicture(input) {
+    //     if(input.file && input.files[0]) {
+    //         const toRaedFile = new FileReader()
+
+    //     }
+    // }
+
+
+    
   return (
    <>
     <Navbar />
             <div className='grid grid-cols-1 lg:grid-cols-10 gap-5 bg-[#3679bc] p-8 sm:p-10 md:p-12 lg:p-20 mt-14'>
                 <img src={QuoteImage} width={100} className='absolute top-17 left-10'/>
                 <div className='lg:col-span-3 md:col-span-3 sm:col-span-10 mt-10'>
+
+                     <input 
+                        id="myImage"
+                        class="photo-upload"
+                        type="file"
+                        accept="image/*, image/jpeg">
+                    </input>
+
+                    <img id="the-picture" width="200" />
+
                     <h3 className='mb-2 text-2xl font-semibold'>What they say about us 👌 </h3>
                     <span className='flex items-center ml-5 mb-5 gap-4 text-2xl font-semibold'>4.5k reviews <StarIcon className='text-yellow-500'/><StarIcon className='text-yellow-500'/><StarIcon className='text-yellow-500'/></span>
                     <p className='mb-5 text-2xl'>"Every dish had a story, and every guest left asking for their number. We've already booked them for our next event."</p>
