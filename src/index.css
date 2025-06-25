@@ -7,3 +7,10 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* @media screen and (max-width: 568px) {
+  .navigationContainer {
+    display: grid;
+  }
+  
+} */

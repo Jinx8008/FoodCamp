@@ -26,14 +26,6 @@ const Testimonial = () => {
                 <img src={QuoteImage} width={100} className='absolute top-17 left-10'/>
                 <div className='lg:col-span-3 md:col-span-3 sm:col-span-10 mt-10'>
 
-                     <input 
-                        id="myImage"
-                        class="photo-upload"
-                        type="file"
-                        accept="image/*, image/jpeg">
-                    </input>
-
-                    <img id="the-picture" width="200" />
 
                     <h3 className='mb-2 text-2xl font-semibold'>What they say about us 👌 </h3>
                     <span className='flex items-center ml-5 mb-5 gap-4 text-2xl font-semibold'>4.5k reviews <StarIcon className='text-yellow-500'/><StarIcon className='text-yellow-500'/><StarIcon className='text-yellow-500'/></span>
@@ -45,6 +37,16 @@ const Testimonial = () => {
                     <CommentsCarousel />
                 </div>
             </div>
+
+                     {/* <input 
+                        id="myImage"
+                        class="photo-upload"
+                        type="file"
+                        accept="image/*, image/jpeg">
+                    </input>
+
+                    <img id="the-picture" width="200" /> */}
+
 
 
 

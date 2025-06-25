@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChevronLeftIcon, ChevronRightIcon, HeartIcon,  } from 'lucide-react'
+import { ChevronLeftIcon, ChevronRightIcon, HeartIcon, Link,  } from 'lucide-react'
 import { useState } from 'react'
 import profileOne from '../assets/profile1.jpg'
 import profileTwo from '../assets/profile2.jpg'
@@ -25,55 +25,13 @@ const CommentsCarousel = () => {
     const [countLiked5, setCountLiked5] = useState(0)
 
 
-    // const SlideCarousel = () => {
-    //     document.querySelector('.CarouselWraper').style.transform = 'translateX(-40%)'
-        
-    // }
-    
-    // const SlideCarousel2 = () => {
-    //     document.querySelector('.CarouselWraper').style.transform = 'translateX(-80%)'
-        
-    // }
-
-    const TestimonialData = [
-        {
-            name: "",
-            review: "",
-            likeBtn: "",
-            image: ""
-        },
-        {
-            name: "",
-            review: "",
-            likeBtn: "",
-            image: ""
-        },
-        {
-            name: "",
-            review: "",
-            likeBtn: "",
-            image: ""
-        },
-        {
-            name: "",
-            review: "",
-            likeBtn: "",
-            image: ""
-        },
-        {
-            name: "",
-            review: "",
-            likeBtn: "",
-            image: ""
-        }
-    ]
 
   return (
     <>
         <div className='overflow-x-hidden overflow-y-hidden pl-5 pb-5'>
-            <div className="swiper-wraper CarouselWraper  flex gap-5">
+            <div className="flex gap-5">
                 {/* slide start */}
-                <div className="swiper-slide tranding-slide">
+                <div id='One'>
                     <div className="w-80 bg-white border border-gray-200 rounded-lg shadow-lg">
                         <img className="rounded-t-lg" src={profileOne} alt="" />
                         <div class="p-5">
@@ -87,7 +45,7 @@ const CommentsCarousel = () => {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide tranding-slide">
+                <div id='Two'>
                     <div className="w-80 bg-white border border-gray-200 rounded-lg shadow-lg">
                         <img className="rounded-t-lg " src={profileTwo} alt="" />
                         <div class="p-5">
@@ -101,7 +59,7 @@ const CommentsCarousel = () => {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide tranding-slide">
+                <div id='Three'>
                     <div className="w-80 bg-white border border-gray-200 rounded-lg shadow-lg">
                         <img className="rounded-t-lg" src={profileThree} alt="" />
                         <div class="p-5">
@@ -115,7 +73,7 @@ const CommentsCarousel = () => {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide tranding-slide">
+                <div id='Four' className="swiper-slide tranding-slide">
                     <div className="w-80 bg-white border border-gray-200 rounded-lg shadow-lg">
                         <img className="rounded-t-lg" src={profileFour} alt="" />
                         <div class="p-5">
@@ -129,9 +87,9 @@ const CommentsCarousel = () => {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide tranding-slide">
-                    <div className="w-80 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <img className="rounded-t-lg" src={profileFive} alt="" />
+                <div id='Five' className="swiper-slide tranding-slide">
+                    <div className="w-80 h-107 bg-white border border-gray-200 rounded-lg shadow-lg">
+                        <img className="rounded-t-lg h-54 " src={profileFive} alt="" />
                         <div class="p-5">
                             <p className="mb-2">“Efficiency, elegance, excellence.”"Like a well-run business, their service and flavors are on point. Truly impressive."</p>
                             
@@ -145,17 +103,20 @@ const CommentsCarousel = () => {
                 </div>
             </div>
 
-            <div className='flex gap-8'>
-                <button className='bg-white rounded-full shadow-lg mt-5 p-1 cursor-pointer hover:scale-130 hover:bg-blue-500 hover:text-white' onClick={()=>{}}><ChevronLeftIcon /></button>
-                <button className='bg-white rounded-full shadow-lg mt-5 p-1 cursor-pointer hover:scale-130 hover:bg-blue-500 hover:text-white' onClick={(e)=>{SlideCarousel(e); SlideCarousel2(e)}}><ChevronRightIcon /></button>
-            </div>
         </div> 
+
+        <div className='flex justify-center mt-10 navigationContainer'>
+            {/* <button className='bg-white rounded-full shadow-lg mt-5 p-1 cursor-pointer hover:scale-130 hover:bg-blue-500 hover:text-white' onClick={()=>{}}><ChevronLeftIcon /></button>
+            <button className='bg-white rounded-full shadow-lg mt-5 p-1 cursor-pointer hover:scale-130 hover:bg-blue-500 hover:text-white' onClick={(e)=>{SlideCarousel(e); SlideCarousel2(e)}}><ChevronRightIcon /></button> */}
+
+            <button><a href="#One" className='bg-white p-2 hover:text-2xl' >1</a></button>
+            <button><a href="#Two" className='bg-white  p-2 hover:text-2xl' >2</a></button>
+            <button><a href="#Three" className='bg-white p-2 hover:text-2xl' >3</a></button>
+            <button><a href="#Four" className='bg-white p-2 hover:text-2xl' >4</a></button>
+            <button><a href="#Five" className='bg-white p-2 hover:text-2xl'  >5</a></button>
+        </div><br /><br />
         
-
-
-
-
-        
+       
     </>
 )
 }
