@@ -105,7 +105,7 @@ const CommentsCarousel = () => {
 
         </div> 
 
-        <div className='flex justify-center mt-10 navigationContainer'>
+        <div className='flex justify-center lg:gap-10 gap-4   mt-10 navigationContainer'>
             {/* <button className='bg-white rounded-full shadow-lg mt-5 p-1 cursor-pointer hover:scale-130 hover:bg-blue-500 hover:text-white' onClick={()=>{}}><ChevronLeftIcon /></button>
             <button className='bg-white rounded-full shadow-lg mt-5 p-1 cursor-pointer hover:scale-130 hover:bg-blue-500 hover:text-white' onClick={(e)=>{SlideCarousel(e); SlideCarousel2(e)}}><ChevronRightIcon /></button> */}
 
